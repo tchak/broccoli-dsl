@@ -1,0 +1,31 @@
+{
+  "name": "broccoli-dsl",
+  "version": "0.1.0",
+  "description": "Simple DSL for broccoli inspired by gobble",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "6to5 index.es6 -o index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/tchak/broccoli-dsl.git"
+  },
+  "keywords": [
+    "broccoli"
+  ],
+  "author": "Paul Chavard <paul+npm@chavard.net>",
+  "license": "MIT",
+  "dependencies": {
+    "broccoli": "^0.13.3",
+    "broccoli-6to5-transpiler": "^2.0.2",
+    "broccoli-concat": "0.0.12",
+    "broccoli-merge-trees": "^0.2.1",
+    "broccoli-static-compiler": "^0.2.1",
+    "require-relative": "~0.8.7"
+  },
+  "devDependencies": {
+    "6to5": "^2.13.7",
+    "mocha": "^2.1.0"
+  }
+}
