@@ -9,6 +9,8 @@ npm install broccoli-dsl --save-dev
 ```
 
 ```javascript
+// Brocfile.js
+
 var dsl = require('broccoli-dsl');
 
 module.exports = dsl([
