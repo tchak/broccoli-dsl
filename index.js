@@ -1,13 +1,8 @@
 "use strict";
 
-var _prototypeProperties = function (child, staticProps, instanceProps) {
-  if (staticProps) Object.defineProperties(child, staticProps);
-  if (instanceProps) Object.defineProperties(child.prototype, instanceProps);
-};
+var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["default"] : obj; };
 
-var _interopRequire = function (obj) {
-  return obj && (obj["default"] || obj);
-};
+var _prototypeProperties = function (child, staticProps, instanceProps) { if (staticProps) Object.defineProperties(child, staticProps); if (instanceProps) Object.defineProperties(child.prototype, instanceProps); };
 
 module.exports = getTree;
 var util = _interopRequire(require("util"));
@@ -124,7 +119,6 @@ var DSL = (function () {
         return this;
       },
       writable: true,
-      enumerable: true,
       configurable: true
     },
     read: {
@@ -132,7 +126,6 @@ var DSL = (function () {
         return this.tree.read(readTree);
       },
       writable: true,
-      enumerable: true,
       configurable: true
     },
     cleanup: {
@@ -140,7 +133,6 @@ var DSL = (function () {
         return this.tree.cleanup();
       },
       writable: true,
-      enumerable: true,
       configurable: true
     }
   });
