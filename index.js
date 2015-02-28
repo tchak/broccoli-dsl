@@ -21,7 +21,7 @@ function tryToLoad(plugin) {
 }
 
 var TRANSFORMS = {
-  "6to5": transpiler,
+  babel: transpiler,
   concat: concat,
   wrap: wrap,
   iife: iife,
@@ -42,7 +42,7 @@ function transpiler(tree, options) {
   }
   delete options.namespace;
 
-  broccoliTranspiler = broccoliTranspiler || require("broccoli-6to5-transpiler");
+  broccoliTranspiler = broccoliTranspiler || require("broccoli-babel-transpiler");
   return broccoliTranspiler(tree, options);
 }
 
