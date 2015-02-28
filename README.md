@@ -22,5 +22,5 @@ module.exports = dsl([
 ```
 
 ```bash
-broccoli build
+broccoli build dist/
 ```
