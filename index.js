@@ -4,7 +4,10 @@ var _interopRequire = function (obj) { return obj && obj.__esModule ? obj["defau
 
 var _prototypeProperties = function (child, staticProps, instanceProps) { if (staticProps) Object.defineProperties(child, staticProps); if (instanceProps) Object.defineProperties(child.prototype, instanceProps); };
 
+var _classCallCheck = function (instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } };
+
 module.exports = getTree;
+
 var util = _interopRequire(require("util"));
 
 var broccoliMerge = _interopRequire(require("broccoli-merge-trees"));
@@ -104,6 +107,8 @@ function jshint(tree, options) {
 
 var DSL = (function () {
   function DSL(tree) {
+    _classCallCheck(this, DSL);
+
     this.tree = tree;
   }
 
